@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="icon" href="icon.png" type="image/png">
+
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="logo.png" alt="Logo" class="logo">
+            <h1 class="name">Rafael Piral</h1>
+            <ul class="nav">
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#projects">Projets</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+    <section id="about">
+        <h2>À propos de moi</h2>
+        <p>Bienvenue sur mon portfolio.</p>
+        <p>Je suis un étudiant en informatique, 
+        actuellement à la recherche d'une opportunité d'alternance pour mon BTS SIO (Services Informatiques aux Organisations).
+        </p>
+        
+        <h3>Compétences</h3>
+        <ul class="skills">
+            <li>
+                <img src="html.png" alt="HTML">
+                <span>HTML (bases)</span>
+            </li>
+            <li>
+                <img src="css.png" alt="CSS">
+                <span>CSS (bases)</span>
+            </li>
+            <li>
+                <img src="js.png" alt="JavaScript">
+                <span>Javascript (en cours d'apprentissage)</span>
+            </li>
+            <li>
+                <img src="php.png" alt="PHP">
+                <span>PHP (en cours d'appprentissage)</span>
+            </li>
+            <li>
+                <img src="java.png" alt="Java">
+                <span>Java (bases)</span>
+            </li>
+            <li>
+                <img src="c.png" alt="C">
+                <span>C (bases)</span>
+            </li>
+            <li>
+                <img src="arduino.png" alt="Arduino">
+                <span>Arduino</span>
+            </li>
+            <li>
+                <img src="office.png" alt="Microsoft Office">
+                <span>Suite Microsoft Office</span>
+            </li>
+            <li>
+                <img src="photoshop.png" alt="Photoshop">
+                <span>Photoshop (bases)</span>
+            </li>
+            <li>
+                <img src="illustrator.png" alt="Illustrator">
+                <span>Illustrator (bases)</span>
+            </li>
+            <li>
+                <img src="premiere-pro.png" alt="Premiere Pro">
+                <span>Premiere Pro (bases)</span>
+            </li>
+            <li>
+                <img src="blender.png" alt="Blender">
+                <span>Blender (bases)</span>
+            </li>
+            <li>
+                <img src="social-media.png" alt="Réseaux sociaux">
+                <span>Réseaux sociaux</span>
+            </li>
+        </ul>
+    </section>
+    <section id="projects">
+        <h2>Mes Projets (scolaire)</h2>
+        <div class="project">
+            <h3>AnkamaMobility</h3>
+            <div class="carousel">
+                <img src="project1.jpg" alt="Projet 1">
+                <img src="location.png" alt="Location">
+                <img src="covoiturage.png" alt="Covoiturage">
+                <img src="vehicule.png" alt="Véhicule">
+            </div>
+            <p>                Le but de ce projet consiste à créer un site web destiné à la location de véhicules au sein d'une entreprise, dans le but de contribuer positivement à l'environnement.
+                Les émissions de gaz à effet de serre provenant des transports sont une préoccupation environnementale majeure.
+                De nombreuses entreprises, dans le cadre de leurs initiatives en faveur du développement durable, cherchent des moyens de réduire leur empreinte carbone.
+                L'une des approches pour y parvenir est d'instaurer un système de réservation de véhicules qui incite les employés à privilégier
+                les transports en commun ou à adopter des pratiques de covoiturage.</p>
+            <a href="https://rafaelpir.github.io/SAE/" target="_blank" class="btn">Lien vers le projet</a>
+          
+            
+        </div>
+        
+        <div class="project">
+            <h3>Projet 2</h3>
+           <img src="project2.gif" alt="Projet 2">
+
+            
+            <p>Ce projet a pour objectif la création d'un rapport détaillé qui documente le processus complet d'installation d'une machine Debian, avec une analyse comparative des interfaces clientes Git disponibles. De plus, ce rapport mettra en lumière l'installation et l'utilisation de l'application Gitea </p>
+       <a href="https://rafaelpir.github.io/RapportTechnique/" target="_blank" class="btn">Lien vers le projet</a>
+        </div>
+    </section>
+    <section id="contact">
+        <h2>Contactez-moi (pas dispo)</h2>
+        <form id="contact-form" action="submit.php" method="post">
+            <label for="name">Nom :</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message :</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit">Envoyer</button>
+        </form>
+        <div id="confirmation-message" style="display: none;">
+            <h1>Message envoyé avec succès !</h1>
+            <p>Merci pour votre message. Nous vous répondrons bientôt.</p>
+        </div>
+    </div>
+        
+    </section>
+    <footer>
+        <p>&copy; 2023 Mon Portfolio</p>
+    </footer>
+   
+    <script src="contact-form.js"></script>
+    <script src="script.js"></script>
+   
+</body>
+</html>
